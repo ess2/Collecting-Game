@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	public CharacterController2D controller;
+	public Animator animator;
 	public float runSpeed = 40f;
-	float horizontalMove = 0f;
-	bool jump = false;
-	bool crouch = false;
+	private float horizontalMove = 0f;
+	private bool jump = false;
+	private bool crouch = false;
+
 	void Start () {
 		
 	}
@@ -18,9 +20,12 @@ public class PlayerMovement : MonoBehaviour {
 		// Debug.Log(Input.GetAxisRaw("Horizontal")); -> Para ver o input horizontal no console do unity
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
 		if(Input.GetButtonDown("Jump"))
 		{
 			jump = true;
+			animator.SetBool("IsJumping", true);
 		}
 
 		if(Input.GetButtonDown("Crouch"))
@@ -31,6 +36,14 @@ public class PlayerMovement : MonoBehaviour {
 		{
 			crouch = false;
 		}
+	}
+
+	public void OnLanding() {
+		animator.SetBool("IsJumping", false);
+	}
+
+	public void OnCrouching(bool IsCrouching) {
+		animator.SetBool("IsCrouching", IsCrouching);
 	}
 
 	void FixedUpdate () {
