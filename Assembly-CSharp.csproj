@@ -58,10 +58,19 @@
      <Compile Include="Assets\PlayerEvents.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\Scripts\ExtensionsMethods.cs" />
      <Compile Include="Assets\Scripts\MainMenuVideo.cs" />
+     <Compile Include="Assets\Scripts\MusicTransitions.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\PlataformMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerMovement2D.cs" />
+     <Compile Include="Assets\Scripts\SceneTransitions.cs" />
+     <Compile Include="Assets\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\TextBoxManager.cs" />
+     <Compile Include="Assets\Scripts\TextImporter.cs" />
      <Compile Include="Assets\Weapon.cs" />
      <Compile Include="Assets\YellowEnemy.cs" />
+     <None Include="Assets\Dialogues\IntroDialogues.txt" />
      <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
  <Reference Include="Cinemachine">
  <HintPath>C:/Users/guisa/Documents/Unity2dDevelopment/Collecting-Game-Prototype-/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

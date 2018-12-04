@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Coin
   - GameMaster
+  - Hero
+  - Background
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -17,8 +20,8 @@ TagManager:
   - 
   - Player
   - SecondGround
-  - 
-  - 
+  - Background
+  - Enemy
   - 
   - 
   - 
