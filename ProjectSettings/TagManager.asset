@@ -9,6 +9,7 @@ TagManager:
   - Hero
   - Background
   - Enemy
+  - Doctor
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - SecondGround
   - Background
   - Enemy
-  - 
+  - Doctor
   - 
   - 
   - 
